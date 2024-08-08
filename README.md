@@ -10,7 +10,7 @@ Pasta usada para armazenar arquivos de exercícios de aula do professor Ronan, d
 
 ![image](https://github.com/user-attachments/assets/ec154fec-60a9-42ea-814e-ac7d81d678a5)
 
-## Exercício de Verificação Eleitoral 🗳️
+## Exercício de Verificação Eleitoral (Python) 🗳️
 
 ![image](https://github.com/user-attachments/assets/96629e95-6bc9-4acf-8229-3363a4810510)
 
