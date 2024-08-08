@@ -5,7 +5,7 @@ public class HelloWorld
     public static void Main(string[] args)
     {
         // Título do programa.
-        Console.WriteLine ("Sorteio");
+        Console.WriteLine ("-------Sorteio-------");
         
         // Cria uma instância para o gerador de números.
         Random numRandom = new Random();
@@ -20,7 +20,7 @@ public class HelloWorld
         int i = 0;
         while (i < 3){
             // Espera um número do usuário.
-            Console.WriteLine ("Digite um numero de 1 a 10");
+            Console.Write ("Digite um numero de 1 a 10: ");
             numeroUsuario = int.Parse(Console.ReadLine());
             
             // Condição para numeros invalidos.
@@ -38,7 +38,7 @@ public class HelloWorld
         }
         // Condição de erro.
         if (numeroUsuario != numeroSorteio && numeroUsuario <= 10){
-            Console.WriteLine ("Voce errou!");
+            Console.WriteLine($"Voce errou! O numero sorteado foi {numeroSorteio}.");
         }
     }
 }
