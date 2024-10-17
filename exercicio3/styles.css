@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os ícones */
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s; /* Transição suave para o efeito de zoom */
+}
+
+.icon:hover {
+    transform: scale(1.5); /* Aumenta o tamanho ao passar o mouse */
+}

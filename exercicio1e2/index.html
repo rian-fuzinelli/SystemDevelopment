@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETEC - 3º Módulo </title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<p>Pressione F5 para atualizar a imagem</p>
+<img id="disciplineImage" src="" alt="">
+<script>
+    const images = [
+        '/imagens/programador.jpg',
+        '/imagens/interneteprotocolos.png',
+        '/imagens/mobile.png',
+        '/imagens/tcc.jpg',
+    ];
+
+    function updateImage() {
+        const randomIndex = Math.floor(Math.random() * images.length);
+        document.getElementById('disciplineImage').src = images[randomIndex];
+    }
+
+    // Atualiza a imagem ao carregar a página
+    window.onload = updateImage;
+</script>
+
+</body>
+</html>
